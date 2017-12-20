@@ -10,7 +10,7 @@ class HomePage extends Component {
 
   componentDidMount() {
     //Fetching tweets
-    // this.fetchTweets('Bitcoin');
+    this.fetchTweets('Bitcoin');
   };
 
   fetchTweets = (search) => {
