@@ -6,13 +6,11 @@ import actions from './../actions';
 import TweetsList from './../components/TweetsList';
 import SearchForm from './../components/SearchForm';
 
-const twitterUrl = require('./../assets/images/twitter.png');
-
 class HomePage extends Component {
 
   componentDidMount() {
     //Fetching tweets
-    this.fetchTweets('Bitcoin');
+    // this.fetchTweets('Bitcoin');
   };
 
   fetchTweets = (search) => {
@@ -24,9 +22,7 @@ class HomePage extends Component {
       <div className="app">
         <div className="main-wrapper">
           <div className="content-wrapper">
-            <div className="content-sidebar">
-              <img width="55" src={twitterUrl} alt=""/>
-            </div>
+            <div className="content-sidebar" />
             <div className="content-main">
               <div className="content-header">
                 <SearchForm fetchTweets={this.fetchTweets} />
