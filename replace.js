@@ -2,8 +2,7 @@ const replace = require('replace-in-file');
 const options = {
   files: [
     'index.html',
-    'build/static/css/*.css',
-    'build/static/js/*.js'
+    'build/static/css/*.css'
   ],
   from: /\/static\//g,
   to: '/build/static/'
